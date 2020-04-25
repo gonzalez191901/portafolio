@@ -8,6 +8,8 @@ const grid = new Muuri('.grid', {
   }
 });
 
+
+
 window.addEventListener('load', () => {
   grid.refreshItems().layout();
   document.getElementById('grid').classList.add("imagenes-cargadas");
@@ -42,11 +44,21 @@ window.addEventListener('load', () => {
 
 
     elemento.addEventListener('click',() => {
+
+      
+
+
       const ruta = elemento.getAttribute('src');
       const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
       overlay.classList.add('activo');
       document.querySelector('#overlay img').src = ruta;
       document.querySelector('#overlay .descripcion').innerHTML = descripcion;
+
+      
+
+      valor_tamaños();
+
+
     });
   });
 
@@ -63,3 +75,20 @@ window.addEventListener('load', () => {
     evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
   });
 });
+
+function valor_tamaños(){
+  
+  var alto_pantalla = screen.height;
+
+  var alto = 60 * alto_pantalla;
+
+  var alto_deseado = alto / 100;
+
+  var obj = document.getElementById('contenedor-img');
+      var alto_img = obj.offsetHeight;
+
+  if (alto_img > alto_deseado) {
+    document.getElementById("contenedor-img-img").style.height = alto_deseado+"px";
+  }
+  
+}
