@@ -148,7 +148,7 @@ header .categorias a.activo{
   display: flex;
   font-size: 70px;
   justify-content: space-between;
-  flex-grow: grow;
+  flex-wrap: wrap;
 }
 
 footer .redes-sociales{
