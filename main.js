@@ -106,3 +106,16 @@ function valor_tamaños(){
   */
   
 }
+
+$("#modo-btn").click(function(){
+  $("#body").toggleClass("dark");
+
+  var modo = $("#body").hasClass("dark");
+
+  if (modo) {
+    $("#modo-btn").attr("src","img/luna.png");
+    
+  }else{
+    $("#modo-btn").attr("src","img/sol.png");
+  }
+});

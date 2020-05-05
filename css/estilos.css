@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing:  border-box;
 }
+
 body{
   background: #222;
   font-family: 'Open Sans', sans-serif;
 }
+
 a{
   text-decoration: none;
 }
@@ -26,6 +28,9 @@ header .logo{
 }
 header .logo h1{
   color: #e74c3c;
+}
+header img{
+  cursor: pointer;
 }
 header .logo p{
   color: #fff;
@@ -226,3 +231,41 @@ footer .creado-por a:hover{ text-decoration: underline;}
     width: 100%;
   }
 }
+
+
+/********Clase dark*************/
+.dark{
+  background: #fafafa;
+}
+.dark .logo h1{
+  color: #3f3844;
+}
+.dark .logo p{
+  color: #000;
+}
+.dark .categorias a{
+  color: #000;
+}
+.dark .tecnologias h1{
+  color: #000;
+}
+
+.dark .recursos{
+  color: #2d3436;
+}
+
+.dark .creado-por{
+  color: #000;
+}
+.dark header form input{
+  border: 1px solid #3f3844;
+}
+.dark .item{
+  /*
+  -webkit-box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.29);
+-moz-box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.29);
+box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.29);
+*/
+}
+
+/****************************/
