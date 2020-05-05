@@ -117,13 +117,19 @@ header .categorias a.activo{
   max-width: 100%;
 }
 .overlay .descripcion{
+  color: #fff;
   display: block;
-  background: #fff;
+  background: rgba(0, 0, 0, 0.5);
   padding: 15px;
   text-align: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  /*
   margin-top: 5px;
   border-radius: 10px;
   max-width: 100%;
+  */
 }
 .contenedor-img{
   position: relative;

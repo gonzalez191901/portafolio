@@ -78,6 +78,19 @@ window.addEventListener('load', () => {
 
 function valor_tamaños(){
   
+
+  var pantalla = $(window).height();
+
+  var contenedor = $("#contenedor-img").innerHeight();
+
+  if (contenedor > pantalla) {
+    
+    var total = pantalla - 50;
+
+    //alert(contenedor+" / "+total);
+    $("#contenedor-img-img").css("max-height", total+"px");
+  }
+  /*
   var alto_pantalla = screen.height;
 
   var alto = 60 * alto_pantalla;
@@ -90,5 +103,6 @@ function valor_tamaños(){
   if (alto_img > alto_deseado) {
     document.getElementById("contenedor-img-img").style.height = alto_deseado+"px";
   }
+  */
   
 }
