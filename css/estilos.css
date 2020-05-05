@@ -157,12 +157,46 @@ header .categorias a.activo{
   text-align: center;
 
 }
+.tecnologias h1{
+  color: #e74c3c;
+}
 .tecnologias .recursos{
   margin-top: 30px;
   display: flex;
   font-size: 70px;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.recursos .descrip{
+  font-size: 15px;
+}
+
+.formulario{
+  width: 100%;
+  margin-top: 30px;
+}
+.formulario h1{
+  text-align: center;
+  color: #e74c3c;
+}
+.formulario input, textarea{
+  width: 100%;
+  margin-top: 30px;
+  padding: 7px;
+  border-radius: 8px;
+  border: none;
+  max-width: 100%;
+  min-width: 100%;
+  font-size: 15px;
+}
+.formulario button{
+  background: #e74c3c;
+  font-size: 15px;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #c0392b;
+  margin-top: 30px;
 }
 
 footer .redes-sociales{
@@ -251,7 +285,14 @@ footer .creado-por a:hover{ text-decoration: underline;}
 }
 
 .dark .recursos{
-  color: #2d3436;
+  color: #e74c3c;
+}
+
+.dark .formulario h1{
+  color: #000;
+}
+.dark .formulario input , textarea{
+   border: 1px solid #3f3844;
 }
 
 .dark .creado-por{
