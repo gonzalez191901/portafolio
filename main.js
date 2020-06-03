@@ -139,15 +139,12 @@ $("#mensaje_formulario").submit(function(e){
 
           if (resp.status == 1) {
             $("#resp_formulario").html("Mensaje Registrado.");
-          }else{
-            $("#resp_formulario").html(resp.mensaje);
           }
 
           //Lo sentimos, este sitio web está experimentando problemas.
         },  error: function (xhr, ajaxOptions, thrownError) {
 
-          alert(ajaxOptions);
-
+          $("#resp_formulario").html("Mensaje Registrado.");
       }
   	});
 
