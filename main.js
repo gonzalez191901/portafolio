@@ -130,7 +130,7 @@ $("#mensaje_formulario").submit(function(e){
       //var data = new FormData(this);
 
       $.ajax({
-  		  url: "http://localhost/prueba_porta/registro.php/",
+  		  url: "https://oscarcamping.000webhostapp.com/apis/registro.php",
   		  data: $('#mensaje_formulario').serialize(),
   		  //data: data,
   		  dataType:'json',
