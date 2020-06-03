@@ -45,7 +45,7 @@ window.addEventListener('load', () => {
 
     elemento.addEventListener('click',() => {
 
-      
+
 
 
       const ruta = elemento.getAttribute('src');
@@ -54,7 +54,7 @@ window.addEventListener('load', () => {
       document.querySelector('#overlay img').src = ruta;
       document.querySelector('#overlay .descripcion').innerHTML = descripcion;
 
-      
+
 
       valor_tamaños();
 
@@ -77,14 +77,14 @@ window.addEventListener('load', () => {
 });
 
 function valor_tamaños(){
-  
+
 
   var pantalla = $(window).height();
 
   var contenedor = $("#contenedor-img").innerHeight();
 
   if (contenedor > pantalla) {
-    
+
     var total = pantalla - 50;
 
     //alert(contenedor+" / "+total);
@@ -104,7 +104,7 @@ function valor_tamaños(){
     document.getElementById("contenedor-img-img").style.height = alto_deseado+"px";
   }
   */
-  
+
 }
 
 $("#modo-btn").click(function(){
@@ -114,8 +114,41 @@ $("#modo-btn").click(function(){
 
   if (modo) {
     $("#modo-btn").attr("src","img/luna.png");
-    
+
   }else{
     $("#modo-btn").attr("src","img/sol.png");
   }
 });
+
+
+
+$("#mensaje_formulario").submit(function(e){
+
+  //$("#loading").show();
+      e.preventDefault();
+
+      //var data = new FormData(this);
+
+      $.ajax({
+  		  url: "http://localhost/prueba_porta/registro.php/",
+  		  data: $('#mensaje_formulario').serialize(),
+  		  //data: data,
+  		  dataType:'json',
+  		  type:'POST',
+  		  success: function(resp){
+
+          if (resp.status == 1) {
+            $("#resp_formulario").html("Mensaje Registrado.");
+          }else{
+            $("#resp_formulario").html(resp.mensaje);
+          }
+
+          //Lo sentimos, este sitio web está experimentando problemas.
+        },  error: function (xhr, ajaxOptions, thrownError) {
+
+          alert(ajaxOptions);
+
+      }
+  	});
+
+  });

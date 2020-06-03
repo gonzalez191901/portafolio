@@ -199,6 +199,12 @@ header .categorias a.activo{
   margin-top: 30px;
 }
 
+#resp_formulario{
+  text-align: center;
+  margin-top: 5px;
+  color: #e74c3c;
+}
+
 footer .redes-sociales{
   display: flex;
   align-content: center;
@@ -308,5 +314,10 @@ footer .creado-por a:hover{ text-decoration: underline;}
 box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.29);
 */
 }
+/*
+#resp_formulario{
+  color: #000;
+}
+*/
 
 /****************************/

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/estilos.css">
   <title>Portafolio - Oscar Gonzalez</title>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body id="body">
 
@@ -226,16 +227,16 @@
   </section>
 
   <section class="overlay" id="overlay">
-  
+
     <div class="contenedor-img" id="contenedor-img">
       <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
       <img src="" alt="" id="contenedor-img-img">
 
       <p class="descripcion"></p>
     </div>
-    
 
-    
+
+
   </section>
 
   <section class="tecnologias">
@@ -268,11 +269,13 @@
   </section>
 
   <section class="formulario">
-    <form action="">
+    <form action="" id="mensaje_formulario">
     <h1>Envia un Mensaje</h1>
+    <input type="hidden" name="_token" value="chmod-R777.">
       <input type="text" name="nombre" id="nombre" placeholder="Nombre">
       <input type="email" name="email" id="email" placeholder="Correo">
       <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+      <div id="resp_formulario"></div>
       <button tipe="submit">Enviar</button>
     </form>
   </section>
