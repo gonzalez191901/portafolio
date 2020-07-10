@@ -1,0 +1,313 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family: arial;
+}
+
+.phone{
+   background: url('../img/elemento-14.png');
+  background-size: cover;
+  position: fixed;
+  top:0;
+  z-index: 3;
+  right: 50px;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.login-fixed{
+  position: fixed;
+  top:70px;
+  z-index: 3;
+  right: 0px;
+}
+.login-fixed .top{
+  display: flex;
+}
+.login-fixed .bottom{
+  color: #fff;
+}
+
+
+.login-fixed .top div{
+  margin-right: 10px;
+}
+.login-fixed .top div a{
+  background: #4ea28c;
+  padding: 8px 25px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+.header{
+
+ background: url('../img/elemento-26.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-height: 150vh;
+}
+
+.header-top{
+
+}
+
+.img-header-top{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 225px;
+}
+
+header .logo .img1{
+  display:block;
+margin:auto;
+position: relative;
+}
+
+header .logo .img2{
+  position: absolute;
+  top: 110px;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+}
+nav a{
+  background: #4ea28c;
+  padding: 8px 25px;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  border-radius: 0 0 10px 10px;
+}
+nav .active{
+  background: #6d3f84;
+}
+
+.login{
+  width: 30%;
+  margin: auto;
+  background: url('../img/elemento-02.png');
+  background-size: inherit;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+
+  padding: 20px 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 39px 18px -29px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 39px 18px -29px rgba(0,0,0,0.75);
+box-shadow: 0px 39px 18px -29px rgba(0,0,0,0.75);
+position: relative;
+}
+
+.div-form-input{
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background: rgba(194,195,201,.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.div-form-input input{
+  width: 100%;
+  border: none;
+  background: none;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.div-form-radio{
+  color: #6d3f84;
+  margin-bottom: 60px;
+}
+.div-form-radio input{
+  background: #6d3f84;
+}
+
+.img-login{
+  position: absolute;
+bottom: -66px;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+.about{
+  background: url('../img/elemento-01.png');
+  background-size: inherit;
+  background-repeat: no-repeat;
+
+  /*
+
+   background-position: center;*/
+   width: 100%;
+   margin-top: 100px;
+   padding: 60px 0;
+}
+
+.about h2{
+  text-align: center;
+  margin-bottom: 60px;
+  color: #6d3f84;
+}
+
+.about .lorem{
+  width: 80%;
+  margin: auto;
+  padding: 60px;
+  color: #87868a;
+  background: rgba(194,195,201,.5);
+  border-radius: 40px;
+  text-align: justify;
+}
+
+.store{
+  background: url('../img/elemento-10.png');
+    background-repeat: no-repeat;
+    background-size: inherit;
+  /*
+   background-size: cover;
+   background-position: center;
+   */
+   width: 100%;
+   padding: 50px 0;
+}
+
+.store .form-store{
+  width: 30%;
+  background: url('../img/elemento-02.png');
+  background-size: inherit;
+  background-repeat: no-repeat;
+  margin-left: 20vh;
+  border-radius: 10px;
+  padding: 20px 10px;
+  -webkit-box-shadow: 0px 39px 18px -29px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 39px 18px -29px rgba(0,0,0,0.75);
+box-shadow: 0px 39px 18px -29px rgba(0,0,0,0.75);
+}
+.div-form-input2{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background: rgba(194,195,201,.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.div-form-input2 input{
+  border: none;
+  background: none;
+  padding-left: 10px;
+  color: #fff;
+  width: 100%;
+}
+
+
+.store .form-store form h3{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.div-form-submit{
+  text-align: center;
+}
+.div-form-submit input{
+  background: #4ea28c;
+  padding: 8px 25px;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  border: none;
+}
+
+.gallery{
+  width: 100%;
+  background: #fff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.gallery .row{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.gallery .row img{
+  width: 100%;
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.gallery .row a{
+  background: #4ea28c;
+  padding: 8px 25px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+footer{
+  background: url('../img/elemento-02.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*
+
+
+  width: 100%;
+  background-size: 100%;
+  */
+
+}
+
+footer .top{
+  display: flex;
+  padding: 50px;
+}
+
+.location, .contac{
+  width: 50%;
+  text-align: justify;
+  padding: 0 40px;
+  color: #fff;
+}
+.contac h1{
+  color: #6d3f84;
+  margin-bottom: 40px;
+}
+.contac span{
+  color: #fff;
+}
+
+.contac form{
+  width: 100%;
+}
+.contac form input, textarea{
+  width: 100%;
+  border: none;
+  margin-bottom: 10px;
+  max-width: 100%;
+  padding: 10px;
+  min-width: 100%;
+}
+
+footer .bottom{
+  background: #6d3f84;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
