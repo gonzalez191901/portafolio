@@ -50,10 +50,13 @@ window.addEventListener('load', () => {
 
       const ruta = elemento.getAttribute('src');
       const descripcion = elemento.parentNode.parentNode.dataset.descripcion;
+      const burl = elemento.parentNode.parentNode.dataset.burl;
+      const urls = elemento.parentNode.parentNode.dataset.url;
       overlay.classList.add('activo');
       document.querySelector('#overlay img').src = ruta;
-      document.querySelector('#overlay .descripcion').innerHTML = descripcion;
+    //  document.querySelector('#overlay .descripcion').innerHTML = descripcion;
 
+      url(burl, urls, descripcion);
 
 
       valor_tamaños();
@@ -92,18 +95,23 @@ function valor_tamaños(){
   }
   /*
   var alto_pantalla = screen.height;
-
   var alto = 60 * alto_pantalla;
-
   var alto_deseado = alto / 100;
-
   var obj = document.getElementById('contenedor-img');
       var alto_img = obj.offsetHeight;
-
   if (alto_img > alto_deseado) {
     document.getElementById("contenedor-img-img").style.height = alto_deseado+"px";
   }
   */
+
+}
+
+function url(burl,urls,descripcion){
+  if (burl == 1) {
+    $(".descripcion").html('<a target="_blank" href="'+urls+'">'+descripcion+'</a>');
+  }else{
+    $(".descripcion").html(descripcion);
+  }
 
 }
 
