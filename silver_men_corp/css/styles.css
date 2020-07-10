@@ -4,22 +4,55 @@
   font-family: arial;
 }
 
+
+#nav-toogle{
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  height: 100vh;
+  background: url('../img/elemento-02.png');
+ background-size: cover;
+ background-position: top;
+
+}
+#nav-toogle .close{
+  display: flex;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  font-size: 30px;
+  width: 100%;
+  justify-content: flex-end;
+}
+#nav-toogle button{
+  color: #fff;
+  border: none;
+  background: none;
+  padding: 10px;
+}
+
+.view_nav{
+  color: #6d3f84;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  margin-top: 10px;
+}
 .phone{
    background: url('../img/elemento-14.png');
   background-size: cover;
   position: fixed;
   top:0;
-  z-index: 3;
+  z-index: 4;
   right: 50px;
   color: #fff;
   padding: 5px 10px;
 }
 
 .login-fixed{
-  position: fixed;
+  position: absolute;
   top:70px;
   z-index: 3;
-  right: 0px;
+  right: 10px;
 }
 .login-fixed .top{
   display: flex;
@@ -57,21 +90,20 @@
   width: 100%;
   position: absolute;
   top: 0;
-  height: 225px;
+  height: 220px;
 }
 
 header .logo .img1{
   display:block;
 margin:auto;
 position: relative;
+
 }
 
 header .logo .img2{
   position: absolute;
   top: 110px;
-
     left: 50%;
-
     transform: translate(-50%, -50%);
 
 }
@@ -98,7 +130,7 @@ nav .active{
   background: url('../img/elemento-02.png');
   background-size: inherit;
   background-repeat: no-repeat;
-  margin-top: 100px;
+  margin-top: 270px;
 
   padding: 20px 30px;
   border-radius: 10px;
@@ -143,13 +175,18 @@ transform: translate(-50%, -50%);
 }
 
 .about{
-  background: url('../img/elemento-01.png');
+  /*
   background-size: inherit;
   background-repeat: no-repeat;
+  */
+  background: url('../img/elemento-01.png');
+   background-size: cover;
+   background-position: top;
+   background-repeat: no-repeat;
+   /*width: 100%;*/
+   /*max-height: 150vh;*/
 
-  /*
 
-   background-position: center;*/
    width: 100%;
    margin-top: 100px;
    padding: 60px 0;
@@ -310,4 +347,104 @@ footer .bottom{
   padding: 20px;
   color: #fff;
   text-align: center;
+}
+
+
+/* RESPONSIVE
+   ========================================================================= */
+
+@media screen and (max-width:990px) {
+  header .logo .img2{
+      /*width: 100%;*/
+    }
+    .login-fixed{
+      display: none;
+    }
+    .login{
+      margin-top: 100px;
+    }
+}
+@media screen and (max-width:766px) {
+
+}
+@media screen and (max-width:572px) {
+
+    header .logo .img2{
+        width: 50%;
+        top: 80px;
+      }
+    .phone{
+      display: none;
+    }
+    .img-header-top{
+
+      height: 120px;
+    }
+    .login{
+      width: 80%;
+    }
+    header nav{
+      display: none;
+    }
+    .about .lorem{
+      width: 90%;
+      padding: 10px;
+    }
+    .store .form-store{
+      width: 90%;
+      margin-left: 0;
+      margin: auto;
+    }
+    .gallery .row{
+      flex-direction: column;
+      margin-bottom: 0px;
+    }
+    .gallery .row img{
+      margin-bottom: 60px;
+    }
+    footer .top{
+      flex-direction: column;
+      padding: 20px 0;
+    }
+
+    .location, .contac{
+      width: 80%;
+      padding: 0;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    .view_nav{
+      display: block;
+    }
+    #nav-toogle nav{
+      flex-direction: column;
+      width: 80%;
+      margin: auto;
+
+    }
+    #nav-toogle nav a{
+      margin-bottom: 10px;
+
+    }
+    .social{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+    .social div a{
+      background: #4ea28c;
+      padding: 8px 25px;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 0 0 10px 10px;
+    }
+
+
+
+
+}
+@media screen and (max-width:450px) {
+  header .logo .img1{
+      width: 100%;
+    }
 }
