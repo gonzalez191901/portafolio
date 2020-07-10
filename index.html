@@ -2,300 +2,452 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="https://kit.fontawesome.com/c2a7f7fd4a.js" crossorigin="anonymous"></script>
-  <script
-			  src="https://code.jquery.com/jquery-3.5.1.js"
-			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-			  crossorigin="anonymous"></script>
-
-  <title>Proyecto</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c2a7f7fd4a.js"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Portafolio - Oscar Gonzalez</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
-<body>
+<body id="body">
 
-
-<div id="nav-toogle" class="" style="display:none;">
-  <div class="close">
-    <button id="toogle-close">
-      X
-    </button>
-
-
-  </div>
-  <div class="nav">
-    <nav>
-      <a href="#" class="active">HOME</a>
-      <a href="#">ABOUT US</a>
-      <a href="#">STORE</a>
-      <a href="#">GALLERY</a>
-      <a href="#">CONTACT US</a>
-    </nav>
-  </div>
-
-  <div class="social">
-    <center>
-      <div>
-        <img src="img/elemento-18.png" alt=""> <br>
-        <a href="">0 Item(s)</a>
-      </div>
-      <a href=""><img src="img/elemento-21.png" alt=""></a>
-      <a href=""><img src="img/elemento-22.png" alt=""></a>
-      <a href=""><img src="img/elemento-23.png" alt=""></a>
-    </center>
-
-  </div>
-  <div class="new-user">
-    <center>
-      <span style="color:#fff">USER NEW?</span> <br>
-      <img src="img/elemento-17.png" alt="">
-      <img src="img/elemento-16.png" alt="">
-    </center>
-
-  </div>
-
-</div>
-
-
-
-
-  <div class="phone">
-    <p>000-000.00000 <img src="img/elemento-20.png" alt=""></p>
-  </div>
-
-  <div class="login-fixed">
-    <div class="top">
-      <div>
-        <img src="img/elemento-18.png" alt=""> <a href="">0 Item(s)</a>
-      </div>
-      <a href=""><img src="img/elemento-21.png" alt=""></a>
-      <a href=""><img src="img/elemento-22.png" alt=""></a>
-      <a href=""><img src="img/elemento-23.png" alt=""></a>
-
-
-
-    </div>
-    <div class="bottom">
-      NEW USER?
-      <img src="img/elemento-17.png" alt="">
-      <img src="img/elemento-16.png" alt="">
-    </div>
-  </div>
-
-  <div class="header">
+  <div class="contenedor">
     <header>
-      <div class="header-top">
-        <img src="img/elemento-24.png" alt="" class="img-header-top">
+      <div class="logo">
 
-        <div class="logo">
-          <img src="img/elemento-25.png" alt="" class="img1">
-          <img src="img/elemento-11.png" alt="" class="img2">
-        </div>
-
+        <h1>Oscar Gonzalez <img src="img/sol.png" alt="" id="modo-btn"></h1>
+        <p>Desarrollador web</p>
       </div>
-      <nav>
-        <a href="#" class="active">HOME</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">STORE</a>
-        <a href="#">GALLERY</a>
-        <a href="#">CONTACT US</a>
-      </nav>
-      <center class="view_nav" id="view_nav">
-        <i class="fas fa-th"></i>
-      </center>
-
+      <form action="">
+        <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar" autocomplete="off">
+      </form>
+      <div class="categorias" id="categorias">
+        <a href="#" class="activo">Todos</a>
+        <a href="#">Paginas</a>
+        <a href="#">Sistemas</a>
+        <a href="#">Login</a>
+        <a href="#">Admin</a>
+        <a href="#">Footer</a>
+        <a href="#">Extras</a>
+      </div>
     </header>
+  <section class="grid" id="grid">
+<!--
+    <div class="item"
+       data-categoria="extras"
+       data-etiquetas="extras"
+       data-descripcion="Menu de navegación Lateral oculto."
+      >
 
-    <section class="login">
-
-      <div class="form">
-        <form action="">
-          <div class="div-form-input">
-              <img src="img/elemento-05.png" alt="">
-            <input type="text" placeholder="Email">
-          </div>
-          <div class="div-form-input">
-            <img src="img/elemento-06.png" alt="">
-            <input type="password" placeholder="Password">
-          </div>
-          <div class="div-form-radio">
-            <input type="checkbox" name="remember" value="remember"> Remember Me
-          </div>
-        </form>
+      <div class="item-contenido">
+        <img src="img/19.gif" alt="">
       </div>
-      <div class="img-login">
-        <img src="img/elemento-16.png" alt="">
+    </div>
+
+    <div class="item"
+       data-categoria="extras"
+       data-etiquetas="extras"
+       data-descripcion="Modo Oscuro es una tendencia que permite cambiar el
+       fondo de pantalla de blanco a negro en la web."
+      >
+
+      <div class="item-contenido">
+        <img src="img/18.gif" alt="">
       </div>
+    </div>
+-->
 
-    </section>
 
-    <section class="about">
 
-      <h2>ABOUTE US</h2>
+    <div class="item"
+       data-categoria="extras"
+       data-etiquetas="extras"
+       data-descripcion="Galeria de Imagenes."
+       data-url=""
+       data-burl="0"
+      >
 
-      <div class="lorem">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem esse explicabo amet,
-        delectus qui possimus aspernatur a tenetur! Architecto eveniet
-        velit nobis distinctio blanditiis at repudiandae, eos ab magnam.
-        Facere.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem esse explicabo amet,
-        delectus qui possimus aspernatur a tenetur! Architecto eveniet
-        velit nobis distinctio blanditiis at repudiandae, eos ab magnam.
-        Facere.</p>
-
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem esse explicabo amet,
-       delectus qui possimus aspernatur a tenetur! Architecto eveniet
-       velit nobis distinctio blanditiis at repudiandae, eos ab magnam.
-       Facere.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem esse explicabo amet,
-       delectus qui possimus aspernatur a tenetur! Architecto eveniet
-       velit nobis distinctio blanditiis at repudiandae, eos ab magnam.
-       Facere.</p>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem esse explicabo amet,
-       delectus qui possimus aspernatur a tenetur! Architecto eveniet
-       velit nobis distinctio blanditiis at repudiandae, eos ab magnam.
-       Facere.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem esse explicabo amet,
-       delectus qui possimus aspernatur a tenetur! Architecto eveniet
-       velit nobis distinctio blanditiis at repudiandae, eos ab magnam.
-       Facere.</p>
+      <div class="item-contenido">
+        <img src="img/25.png" alt="">
       </div>
+    </div>
 
+    <div class="item"
+       data-categoria="extras"
+       data-etiquetas="extras"
+       data-descripcion="Formulario de Creación de Usuarios."
+       data-url=""
+       data-burl="0"
+      >
 
-    </section>
-
-    <section class="store">
-
-      <div class="form-store">
-
-
-          <form action="">
-
-            <h3>CREATE NEW ACCOUNT</h3>
-            <div class="div-form-input2">
-              <img src="img/elemento-04.png" alt="">
-              <input type="text" placeholder="Full Name">
-            </div>
-            <div class="div-form-input2">
-                <img src="img/elemento-05.png" alt="">
-              <input type="text" placeholder="Email">
-            </div>
-            <div class="div-form-input2">
-                <img src="img/elemento-06.png" alt="">
-              <input type="password" placeholder="Password">
-            </div>
-            <div class="div-form-input2">
-                <img src="img/elemento-07.png" alt="">
-              <input type="password" placeholder="Confirm Password">
-            </div>
-            <div class="div-form-input2">
-                <img src="img/elemento-08.png" alt="">
-              <input type="text" placeholder="Phone Number">
-            </div>
-            <div class="div-form-radio">
-              <input type="checkbox" name="remember" value="remember"> Remember Me
-            </div>
-            <div class="div-form-submit">
-              <input type="submit" name="" value="REGISTER">
-            </div>
-          </form>
-
-
+      <div class="item-contenido">
+        <img src="img/24.png" alt="">
       </div>
+    </div>
 
-    </section>
+    <div class="item"
+       data-categoria="paginas"
+       data-etiquetas="paginas"
+       data-descripcion="Ejemplo de landing page."
+       data-url=""
+       data-burl="0"
+      >
 
-    <section class="gallery">
-
-        <div class="row">
-          <div class="art">
-            <img src="img/elemento-36.png" alt="">
-            <center>
-              <a href="#" class="detalle">DETAILS</a>
-            </center>
-
-          </div>
-          <div class="art">
-            <img src="img/elemento-37.png" alt="">
-            <center>
-              <a href="#" class="detalle">DETAILS</a>
-            </center>
-          </div>
-          <div class="art">
-            <img src="img/elemento-36.png" alt="">
-            <center>
-              <a href="#" class="detalle">DETAILS</a>
-            </center>
-          </div>
-          <div class="art">
-            <img src="img/elemento-37.png" alt="">
-            <center>
-              <a href="#" class="detalle">DETAILS</a>
-            </center>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="art">
-            <img src="img/elemento-37.png" alt="">
-            <center>
-              <a href="#" class="detalle">DETAILS</a>
-            </center>
-          </div>
-          <div class="art">
-            <img src="img/elemento-36.png" alt="">
-            <center>
-              <a href="#" class="detalle">DETAILS</a>
-            </center>
-          </div>
-          <div class="art">
-            <img src="img/elemento-37.png" alt="">
-            <center>
-              <a href="#" class="detalle">DETAILS</a>
-            </center>
-          </div>
-          <div class="art">
-            <img src="img/elemento-36.png" alt="">
-            <center>
-              <a href="#" class="detalle">DETAILS</a>
-            </center>
-          </div>
-        </div>
-    </section>
-    <footer>
-      <div class="top">
-        <div class="location">
-          <center>
-            <img src="img/elemento-19.png" alt="">
-          </center>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quidem similique asperiores molestiae tempora atque ipsa dicta blanditiis itaque perferendis doloribus dolor repudiandae adipisci, fugit. Tempore, quaerat nesciunt incidunt asperiores!</p>
-        </div>
-        <div class="contac">
-          <h1>CONTACT  <span>US</span></h1>
-
-          <form class="" action="index.html" method="post">
-            <div><input type="text" name="" placeholder="Name"></div>
-            <div><input type="text" name="" placeholder="Email adress"></div>
-            <div><input type="text" name="" placeholder="Subject"></div>
-            <div><textarea name="message" placeholder="Your message" ></textarea></div>
-          </form>
-        </div>
+      <div class="item-contenido">
+        <img src="img/23.png" alt="">
       </div>
-      <div class="bottom">
-            | Desing by PSOFNTECH
+    </div>
+
+    <div class="item"
+       data-categoria="paginas"
+       data-etiquetas="paginas"
+       data-descripcion="Silver Men Corp."
+       data-url="silver_men_corp"
+       data-burl="1"
+      >
+
+      <div class="item-contenido">
+        <img src="img/22.png" alt="">
       </div>
+    </div>
+
+    <div class="item"
+       data-categoria="paginas"
+       data-etiquetas="paginas"
+       data-descripcion="Envio de Formulario Web."
+       data-url=""
+       data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/21.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+       data-categoria="extras"
+       data-etiquetas="extras"
+       data-descripcion="Vista de Youtube"
+       data-url="youtube"
+       data-burl="1"
+      >
+
+      <div class="item-contenido">
+        <img src="img/20.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+       data-categoria="paginas"
+       data-etiquetas="paginas"
+       data-descripcion="Pagina o perfil profecional."
+       data-url=""
+       data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/17.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+       data-categoria="sistemas"
+       data-etiquetas="paginas sistemas login"
+       data-descripcion="Login de ingreso al Sistema."
+       data-url=""
+       data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/16.png" alt="">
+      </div>
+    </div>
+
+
+    <div class="item"
+       data-categoria="login"
+       data-etiquetas="login"
+       data-descripcion="Login Personalizado del sistema."
+       data-url=""
+       data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/1.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+       data-categoria="admin"
+       data-etiquetas="admin sistemas"
+       data-descripcion="Administrador de Roles en el Sistema."
+       data-url=""
+       data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/2.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+       data-categoria="paginas"
+       data-etiquetas="paginas web"
+       data-descripcion="Salud en Linea"
+       data-url=""
+       data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/3.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+       data-categoria="admin"
+       data-etiquetas="admin sistemas usuarios"
+       data-descripcion="Administrador de Usuarios en el Sistema."
+       data-url=""
+       data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/4.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+       data-categoria="login"
+       data-etiquetas="login sistemas"
+       data-descripcion="Login del Sistema."
+       data-url=""
+       data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/5.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+       data-categoria="login"
+       data-etiquetas="login sistemas"
+       data-descripcion="Login del Sistema."
+       data-url=""
+       data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/6.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+       data-categoria="paginas"
+       data-etiquetas="paginas sistemas login"
+       data-descripcion="Sistemas web."
+       data-url=""
+       data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/7.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+       data-categoria="paginas"
+       data-etiquetas="paginas sistemas login"
+       data-descripcion="Sistemas web."
+       data-url=""
+       data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/8.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+       data-categoria="sistemas"
+       data-etiquetas="paginas sistemas login"
+       data-descripcion="Adminlte Laravel."
+       data-url=""
+       data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/9.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+       data-categoria="footer"
+       data-etiquetas="paginas sistemas footer"
+       data-descripcion="Ejemplo Footer Paginas Web."
+       data-url=""
+       data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/10.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+      data-categoria="login"
+      data-etiquetas="login sistemas"
+      data-descripcion="Login del Sistema."
+      data-url=""
+      data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/11.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+      data-categoria="sistemas"
+      data-etiquetas="paginas sistemas login"
+      data-descripcion="Sistemas de Informacion."
+      data-url=""
+      data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/12.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+    data-categoria="admin"
+    data-etiquetas="admin sistemas usuarios"
+    data-descripcion="Administrador de Usuarios en el Sistema."
+    data-url=""
+    data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/13.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+    data-categoria="login"
+    data-etiquetas="login sistemas"
+    data-descripcion="Login del Sistema."
+    data-url=""
+    data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/14.png" alt="">
+      </div>
+    </div>
+
+    <div class="item"
+    data-categoria="login"
+    data-etiquetas="login sistemas"
+    data-descripcion="Login del Sistema."
+    data-url=""
+    data-burl="0"
+      >
+
+      <div class="item-contenido">
+        <img src="img/15.png" alt="">
+      </div>
+    </div>
 
 
 
-    </footer>
+  </section>
+
+  <section class="overlay" id="overlay">
+
+    <div class="contenedor-img" id="contenedor-img">
+      <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+      <img src="" alt="" id="contenedor-img-img">
+
+      <p class="descripcion">
+
+      </p>
+    </div>
 
 
 
+  </section>
 
+  <section class="tecnologias">
+    <h1>Tecnologias</h1>
+
+    <div class="recursos">
+      <div>
+        <i class="fab fa-html5"></i>
+        <div class="descrip">HTML</div>
+      </div>
+      <div>
+        <i class="fab fa-css3-alt"></i>
+        <div class="descrip">Css3</div>
+      </div>
+      <div>
+        <i class="fab fa-js-square"></i>
+        <div class="descrip">JavaScript</div>
+      </div>
+    </div>
+    <div class="recursos">
+      <div>
+        <i class="fab fa-php"></i>
+        <div class="descrip">PHP</div>
+      </div>
+      <div>
+        <i class="fab fa-laravel"></i>
+        <div class="descrip">Laravel</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="formulario">
+    <form action="" id="mensaje_formulario">
+    <h1>Envia un Mensaje</h1>
+    <input type="hidden" name="_token" value="chmod-R777.">
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+      <input type="email" name="email" id="email" placeholder="Correo">
+      <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+      <div id="resp_formulario"></div>
+      <button tipe="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="contenedor">
+    <div class="redes-sociales">
+      <div class="contenedor-icono">
+        <a href="https://twitter.com/1oscargonzalez" target="_blank" class="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      <div class="contenedor-icono">
+        <a href="https://www.facebook.com/oscargonzalez191901" target="_blank" class="facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+      <div class="contenedor-icono">
+        <a href="https://www.instagram.com/ogonzalez01/" target="_blank" class="instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="creado-por">
+      <p>Sitio diseñado por <a href="https://gonzalez191901.github.io/portafolio/" target="_blank">Oscar Gonzalez</a></p>
+    </div>
+  </footer>
   </div>
 
-<script src="js/app.js"></script>
+
+  <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+  <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+  <script src="main.js"></script>
 </body>
-
-
 </html>
